@@ -523,8 +523,6 @@ input[type=checkbox]:checked + .fake-checkbox{
 }
 
 
-
-
-
-
-
+:required {
+  background: red;
+}

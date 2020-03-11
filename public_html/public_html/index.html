@@ -5,6 +5,8 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
+
+    <!--https://github.com/Sofka91/Strict_Project.git-->
     <head>
         <title>Strict</title>
         <meta charset="UTF-8">
@@ -164,11 +166,11 @@ and open the template in the editor.
                     <div class="row">
                         <!--. portfolio item start-->
                         <div class="col-12  mb-4 col-sm-6 col-md-4">
-                            <figure class="mb-0 position-relative animation" data-animation="slideDown" data-fancybox="gallery">
+                            <figure class="mb-0 position-relative animation" data-animation="slideDown">
                                 <img class="d-block w-100" src="img/projects/project-01.jpg" alt=""/>
                                 <div class="portfolio-hover position-absolute">
                                     <nav>
-                                        <a class="fas fa-search-plus"></a>
+                                        <a href="img/projects/project-01.jpg" class="fas fa-search-plus" data-fancybox="gallery"></a>
                                         <a class="fas fa-link"></a>
                                     </nav>
                                 </div>
@@ -176,11 +178,11 @@ and open the template in the editor.
                         </div><!--. portfolio item end-->
                         <!--. portfolio item start-->
                         <div class="col-12  mb-4 col-sm-6 col-md-4">
-                            <figure class="mb-0 position-relative animation" data-animation="slideDown" data-fancybox="gallery">
+                            <figure class="mb-0 position-relative animation" data-animation="slideDown">
                                 <img class="d-block w-100" src="img/projects/project-02.jpg" alt=""/>
                                 <div class="portfolio-hover position-absolute">
                                     <nav>
-                                        <a class="fas fa-search-plus"></a>
+                                        <a href="img/projects/project-02.jpg" class="fas fa-search-plus" data-fancybox="gallery"></a>
                                         <a class="fas fa-link"></a>
                                     </nav>
                                 </div>
@@ -188,11 +190,11 @@ and open the template in the editor.
                         </div><!--. portfolio item end-->
                         <!--. portfolio item start-->
                         <div class="col-12  mb-4 col-sm-6 col-md-4">
-                            <figure class="mb-0 position-relative animation" data-animation="slideDown" data-fancybox="gallery">
+                            <figure class="mb-0 position-relative animation" data-animation="slideDown">
                                 <img class="d-block w-100" src="img/projects/project-03.jpg" alt=""/>
                                 <div class="portfolio-hover position-absolute">
                                     <nav>
-                                        <a class="fas fa-search-plus"></a>
+                                        <a href="img/projects/project-03.jpg" class="fas fa-search-plus" data-fancybox="gallery"></a>
                                         <a class="fas fa-link"></a>
                                     </nav>
                                 </div>
@@ -200,11 +202,11 @@ and open the template in the editor.
                         </div><!--. portfolio item end-->
                         <!--. portfolio item start-->
                         <div class="col-12  mb-4 col-sm-6 col-md-4">
-                            <figure class="mb-0 position-relative animation" data-animation="slideUp" data-fancybox="gallery">
+                            <figure class="mb-0 position-relative animation" data-animation="slideUp">
                                 <img class="d-block w-100" src="img/projects/project-04.jpg" alt=""/>
                                 <div class="portfolio-hover position-absolute">
                                     <nav>
-                                        <a class="fas fa-search-plus"></a>
+                                        <a href="img/projects/project-04.jpg" class="fas fa-search-plus" data-fancybox="gallery"></a>
                                         <a class="fas fa-link"></a>
                                     </nav>
                                 </div>
@@ -212,11 +214,11 @@ and open the template in the editor.
                         </div><!--. portfolio item end-->
                         <!--. portfolio item start-->
                         <div class="col-12  mb-4 col-sm-6 col-md-4">
-                            <figure class="mb-0 position-relative animation" data-animation="slideUp" data-fancybox="gallery">
+                            <figure class="mb-0 position-relative animation" data-animation="slideUp">
                                 <img class="d-block w-100" src="img/projects/project-05.jpg" alt=""/>
                                 <div class="portfolio-hover position-absolute">
                                     <nav>
-                                        <a class="fas fa-search-plus"></a>
+                                        <a href="img/projects/project-05.jpg" class="fas fa-search-plus" data-fancybox="gallery"></a>
                                         <a class="fas fa-link"></a>
                                     </nav>
                                 </div>
@@ -224,11 +226,11 @@ and open the template in the editor.
                         </div><!--. portfolio item end-->
                         <!--. portfolio item start-->
                         <div class="col-12  mb-4 col-sm-6 col-md-4">
-                            <figure class="mb-0 position-relative animation" data-animation="slideUp" data-fancybox="gallery">
+                            <figure class="mb-0 position-relative animation" data-animation="slideUp">
                                 <img class="d-block w-100" src="img/projects/project-06.jpg" alt=""/>
                                 <div class="portfolio-hover position-absolute">
                                     <nav>
-                                        <a class="fas fa-search-plus"></a>
+                                        <a href="img/projects/project-06.jpg" class="fas fa-search-plus" data-fancybox="gallery"></a>
                                         <a class="fas fa-link"></a>
                                     </nav>
                                 </div>
@@ -248,16 +250,16 @@ and open the template in the editor.
 
                     <form class="contact-form" method="post" action="">
                         <div class="form-group">
-                            <input type="text" name="name" value="" placeholder="Full Name" class="form-control">
+                            <input type="text" name="name" value="" placeholder="Full Name" class="form-control" required="">
                             <div class="invalid-feedback"></div>
                         </div>
 
                         <div class="form-group">
-                            <input type="email" name="email" value="" placeholder="Email Address" class="form-control">
+                            <input type="email" name="email" value="" placeholder="Email Address" class="form-control" required="">
                             <div class="invalid-feedback"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" rows="6" name="message" placeholder="Message"></textarea>
+                            <textarea class="form-control" rows="6" name="message" placeholder="Message" required=""></textarea>
                             <div class="invalid-feedback"></div>
                         </div>
 
@@ -323,14 +325,9 @@ and open the template in the editor.
                         required: true,
                         email: true
                     },
-                    password: {
-                        required: true,
-                        minlength: 6,
-                        passwordChech: true
-                    },
                     message: {
                         required: true,
-                maxLength: 270
+                        maxLength: 270
                     },
                     messages: {
                         name: {
